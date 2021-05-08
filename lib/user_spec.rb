@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "rspec"
-require_relative "user.rb"
+require_relative "../lib/user.rb"
 
 RSpec.describe User, type: :model do
   subject(:user) { described_class.new }

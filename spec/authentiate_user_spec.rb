@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 require 'rspec'
-require_relative 'user'
-require_relative 'authenticate_user'
+require_relative '../lib/user'
+require_relative '../lib/authenticate_user'
 
 RSpec.describe AuthenticateUser, type: :model do
   subject(:context) { AuthenticateUser.call(user: user, password: 'secret') }
